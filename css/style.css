@@ -1,9 +1,6 @@
 
 /*LINKS DAS FONTES*/
-@font-face {
-    font-family: Inter;
-    src: url(./Inter/static/Inter-Bold.ttf)
-  }
+@import url(./Inter/static/Inter-Bold.ttf) Inter;
 @font-face {
     font-family: Interregular;
     src: url(./Inter/static/Inter-Regular.ttf)
