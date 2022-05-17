@@ -1,19 +1,12 @@
 
 /*LINKS DAS FONTES*/
-@import url(./Inter/static/Inter-Bold.ttf) Inter;
-@font-face {
-    font-family: Interregular;
-    src: url(./Inter/static/Inter-Regular.ttf)
-}
-@font-face {
-    font-family: Intermedium;
-    src: url(./Inter/static/Inter-Medium.ttf)
-}
-@font-face {
-    font-family: Inter600;
-    src: url(./Inter/static/Inter-Bold.ttf)
-}
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
 
 /*ESTILIZANDO O MENU*/
 *{
@@ -41,7 +34,7 @@ nav{
     display: flex;
     margin: 0 auto;
     align-items: center;
-    font-family: Inter;
+    font-family: 'Inter:wght@700',sans-serif;
     margin-left: 20px;
     font-size: 30px;
     margin-top: 23px;
@@ -51,17 +44,16 @@ nav{
     color: rgba(41, 41, 41, 1);
 }
 .acessorios,.calcados,.camisetas,.nomeProduto,.carrinhoCompras,.carrinhoVazio{
-    font-family: Inter;
+    font-family: 'Inter:wght@700', sans-serif;
 }
 .descricao, .categoria,.acessorios,.calcados,.camisetas,.carrinhoAdicione{
-    font-family: Interregular;
-    font-size: 16px;
+    font-family: 'Inter:wght@400', sans-serif;
 }
 .preco,.todos{
-    font-family: Inter600;
+    font-family: 'Inter:wght@600', sans-serif;
 }
 .botaoAdicionar{
-    font-family: Intermedium;
+    font-family: 'Inter:wght@500', sans-serif;
 }
 .menu{
     display: flex;
@@ -70,12 +62,10 @@ nav{
 }
 .todos{
     display: flex;
-    height: 16px;
-    margin-left: 100px;
+    margin-left: 150px;
     margin-top: 27px;
     margin-bottom: 27px;
     align-items: center;
-    color: rgba(41, 41, 41, 1);
     background-color: #f8f8f8;
 }
 .acessorios{
@@ -150,6 +140,9 @@ nav{
     margin-right: 15px;
     margin-bottom: 20px;
     margin-left: 15px;
+}
+.preco{
+    color: #2E245E;
 }
 .nomeProduto{
     color: rgba(41, 41, 41, 1);
