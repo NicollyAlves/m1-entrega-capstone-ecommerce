@@ -50,7 +50,7 @@ listarProdutos(data)
 
 const card = document.querySelector("aside")
 function emptyCart(){
-  return card.insertAdjacentHTML("afterbegin",
+  return card.insertAdjacentHTML("beforeend",
   `
   <div class="pesquisa">
   <input class="espacoDigitar" type="text" placeholder="Digite aqui sua pesquisa">
@@ -65,15 +65,20 @@ const cartSpace = document.querySelector(".vazio")
 function space(item, i){
   return cartSpace.insertAdjacentHTML("beforeend",
   `
-  <li class="produto">
-                    <img class="imgMascara" src=${item.img} alt="Imagem de máscara preta">
-                    <h3 class="nomeProduto">${item.nomeProduto}</h3>
-                    <h3 class="preco"><strong>${item.value}</strong></h3>
-                    <button class="remover" id=${i}>Remover do carrinho</button>
+  <h3 class="carrinhoCompras">Carrinho de compras</h3>
+  <img class="imgPrinc" src=${item.img} alt="Imagem de máscara preta">
+  <li class="product">
+                    <h3 class="nameProduct">${item.nameItem}</h3>
+                    <h3 class="price"><strong>${item.value}</strong></h3>
+                    <button class="remove" id=${i}>Remover do carrinho</button>
                 </li>
   `
 )}
-  
+
+
+
+
+
 let car = []
 
 addEventListener("click", event => {
@@ -88,11 +93,11 @@ addEventListener("click", event => {
        return
     }
 
-    if(clique.className==="remover"){
+    if(clique.className==="remove"){
       car.splice(clique.id, 1)
       cartSpace.innerHTML = ""
       car.map(space)
-      return
+     
     }
 })
 
