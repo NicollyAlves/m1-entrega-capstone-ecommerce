@@ -238,3 +238,26 @@ img{
     font-size: 14px;
     margin-top: 25px;
 }
+.nameProduct{
+    color: #0e0731;
+    font-family: 'Inter:wght@600',sans-serif;
+}
+
+.remove{
+    color: #2E245E;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+.imgPrinc{
+    width: 150px;
+    height: 150px;
+}
