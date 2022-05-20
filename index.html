@@ -6,41 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/database.js"></script>
+    <script src="./js/index.js" defer></script>
 </head>
 <body>
     <nav class="navegador">
         <h1 class="tituloPrincipal">Weartake</h1>
         <div class="menu">
-        <button class="todos">Todos</button>
+        <button class="todos"><strong>Todos</strong></button>
         <button class="acessorios">Acessórios</button>
         <button class="calcados">Calçados</button>
         <button class="camisetas">Camisetas</button>
         </div>
     </nav>
-    <main class="caixa">
+    <main id="categoria" class="caixa">
         <section class="produtos">
-            <ul class="jaquetaPreta">
-                <li class="listaJaqueta">
-                    <img class="imgJaqueta" src="./img/jaqueta.svg" alt="Imagem de jaqueta preta">
+            <ul class="listaProdutos">
+              <!--  <li class="produto">
+                    <img class="img" src="./img/jaqueta.svg" alt="Imagem de jaqueta preta">
                     <p class="categoria">Camisetas</p>
                     <h3 class="nomeProduto">Lightweight Jacket</h3>
                     <p class="descricao">Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...</p>
                     <h3 class="preco"><strong>R$ 100.00</strong></h3>
                     <button class="botaoAdicionar">Adicionar ao carrinho</button>
                 </li>
-            </ul>
-            <ul class="gorro">
-                <li class="listaGorro">
-                    <img class="imgGorro" src="./img/gorro.svg" alt="Imagem de gorro preto">
+            
+                <li class="produto">
+                    <img class="img" src="./img/gorro.svg" alt="Imagem de gorro preto">
                     <p class="categoria">Acessórios</p>
                     <h3 class="nomeProduto">Black Hat</h3>
                     <p class="descricao">O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...</p>
                     <h3 class="preco"><strong>R$ 100.00</strong></h3>
                     <button class="botaoAdicionar">Adicionar ao carrinho</button>
                 </li>
-            </ul>
-            <ul class="mascara">
-                <li class="listaMascara">
+            
+                <li class="produto">
                     <img class="imgMascara" src="./img/mascara.svg" alt="Imagem de máscara preta">
                     <p class="categoria">Acessórios</p>
                     <h3 class="nomeProduto">Mask</h3>
@@ -48,9 +48,8 @@
                     <h3 class="preco"><strong>R$ 100.00</strong></h3>
                     <button class="botaoAdicionar">Adicionar ao carrinho</button>
                 </li>
-            </ul>
-            <ul class="camisetaPreta">
-                <li class="listaCamisetaPreta">
+            
+                <li class="produto">
                     <img class="imgCamisetaPreta" src="./img/camiseta_preta.svg" alt="Imagem de camiseta preta">
                     <p class="categoria">Camisetas</p>
                     <h3 class="nomeProduto">T-Shirt</h3>
@@ -58,9 +57,8 @@
                     <h3 class="preco"><strong>R$ 100.00</strong></h3>
                     <button class="botaoAdicionar">Adicionar ao carrinho</button>
                 </li>
-            </ul>
-            <ul class="camisetaBranca">
-                <li class="listaCamisetaBranca">
+            
+                <li class="produto">
                     <img class="imgCamisetaBranca" src="./img/camiseta_branca.svg" alt="Imagem de camiseta branca">
                     <p class="categoria">Camisetas</p>
                     <h3 class="nomeProduto">Short-Sleeve T-Shir</h3>
@@ -68,29 +66,29 @@
                     <h3 class="preco"><strong>R$ 100.00</strong></h3>
                     <button class="botaoAdicionar">Adicionar ao carrinho</button>
                 </li>
-            </ul>
-            <ul class="moletom">
-                <li class="listaMoletom">
+            
+                <li class="produto">
                     <img class="imgMoletom" src="./img/moletom.svg" alt="Imagem de moletom preto">
                     <p class="categoria">Camisetas</p>
                     <h3 class="nomeProduto">Champion Packable Jacket</h3>
                     <p class="descricao">Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...</p>
                     <h3 class="preco"><strong>R$ 100.00</strong></h3>
                     <button class="botaoAdicionar">Adicionar ao carrinho</button>
-                </li>
+                </li>-->
             </ul>
         </section>
+    </main>
+    <aside>
         <div class="pesquisa">
             <input class="espacoDigitar" type="text" placeholder="Digite aqui sua pesquisa">
             <button class="botaoPesquisar">Pesquisar</button>
         </div>
-        <div class="carrinho">
+
+        <ul class="vazio">
             <h3 class="carrinhoCompras">Carrinho de compras</h3>
-            <div class="vazio">
-            <h3 class="carrinhoVazio">Carrinho vazio</h3>
-            <p class="carrinhoAdicione">Adicione itens</p>
-            </div>
-        </div>
-    </main>
+            <li class="carrinhoVazio">Carrinho vazio</li>
+            <li class="carrinhoAdicione">Adicione itens</li>
+        </ul>
+    </aside>
 </body>
 </html>
