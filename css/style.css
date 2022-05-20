@@ -105,20 +105,18 @@ nav{
     cursor: pointer;
 }
 /*ESTILIZANDO OS CARDS*/
-.jaquetaPreta,.gorro,.mascara,.camisetaPreta,.camisetaBranca,.moletom{
+.produto{
     display: inline-block;
     margin-top: 112px;
     margin-right: 20px;
     max-width: 300px;
     margin-bottom: 30px;
 }
-.imgJaqueta,.imgGorro,.imgMascara,.imgCamisetaPreta,.imgCamisetaBranca,.imgMoletom{
+img{
     display: inline-block;
     height: 154px;
     width: 296px;
     background-color: #f5f5f5;
-}
-.imgJaqueta,.imgGorro,.imgMascara,.imgCamisetaPreta,.imgCamisetaBranca,.imgMoletom{
     padding: 10px;
 }
 .categoria{
@@ -156,10 +154,10 @@ nav{
     text-decoration: underline;
     cursor: pointer;
 }
-ul{
+.produto{
     border: 2px solid #f5f5f5;
 }
-ul:hover{
+.produto:hover{
     border-color: #2e245e;
 }
 /*ESTLIZANDO CAIXA DO CARRINHO E PESQUISA*/
@@ -188,6 +186,7 @@ ul:hover{
 }
 .botaoPesquisar:hover{
     background-color: #2E245E;
+    cursor: pointer;
 }
 .pesquisa{
     display: flex;
@@ -197,29 +196,9 @@ ul:hover{
     height: 40px;
     max-width: 1603px;
     margin-left: 875px;
-    
 }
 .caixa{
     width: 1200px;
-}
-.carrinho{
-    display: inline-block;
-    float: right;
-    position: fixed;
-    inset: 200px;
-    max-height: 1000px;
-    margin-left: 785px;
-    max-width: 1603px;
-}
-.carrinhoCompras{
-    display: flex;
-    background-color: #37268C;
-    color: #ffff;
-    width: 339px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
 }
 .vazio{
     display: flex;
@@ -231,8 +210,31 @@ ul:hover{
     align-items: center;
     background-color: #f5f5f5;
 }
+.vazio{
+    position: fixed;
+    inset: 260px;
+    max-height: 1000px;
+    margin-left: 725px;
+    max-width: 800px;
+}
+.carrinhoCompras{
+    display: flex;
+    background-color: #37268C;
+    position: fixed;
+    inset: 200px;
+    color: #ffff;
+    width: 339px;
+    height: 50px;
+    margin-left: 786px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+
+
 .carrinhoAdicione{
     font-size: 14px;
     margin-top: 25px;
 }
-
